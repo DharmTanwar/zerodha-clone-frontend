@@ -4,7 +4,7 @@ function AppLoader({ children }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3002/health")
+    fetch("https://zerodha-clone-backend-g7h3.onrender.com/health")
       .then(() => setLoading(false))
       .catch(() => setLoading(false));
   }, []);
