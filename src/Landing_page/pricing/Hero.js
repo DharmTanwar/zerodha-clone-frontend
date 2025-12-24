@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 export default function Hero() {
   return (
@@ -9,7 +9,7 @@ export default function Hero() {
           List of all charges and taxes
         </p>
         <div className="col-12 col-md-4 mt-5">
-          <img className="img-fluid" style={{width:"70%"}} src="\media\pricing0.svg" />
+          <img className="img-fluid" alt="price" style={{width:"70%"}} src="\media\pricing0.svg" />
           <h1 className="text-muted mt-3">Free equity delivery</h1>
           <p className="text-muted fs-5">
             All equity delivery investments (NSE, BSE), are absolutely free — ₹
@@ -17,7 +17,7 @@ export default function Hero() {
           </p>
         </div>
         <div className="col-12 col-md-4 mt-5">
-          <img className="img-fluid"  style={{width:"70%"}}src="\media\intradayTrades.svg" />
+          <img className="img-fluid"  alt="trade" style={{width:"70%"}}src="\media\intradayTrades.svg" />
         
           <h1 className="text-muted mt-3">Intraday and F&O trades</h1>
           <p className="text-muted fs-5 ">
@@ -27,7 +27,7 @@ export default function Hero() {
           </p>
         </div>
         <div className="col-12 col-md-4 mt-5">
-          <img className="img-fluid"style={{width:"70%"}} src="\media\pricing0.svg" />
+          <img className="img-fluid"style={{width:"70%"}} alt="price" src="\media\pricing0.svg" />
           <h1 className="text-muted mt-3">Free direct MF</h1>
           <p className="text-muted fs-5 ">
             All direct mutual fund investments are absolutely free — ₹ 0

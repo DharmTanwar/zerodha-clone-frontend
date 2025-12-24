@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState} from "react";
 import axios from "axios";
 
 export default function Login() {
@@ -15,8 +15,8 @@ export default function Login() {
   const handleSubmit = async (e) => {
    e.preventDefault();;
     try {
-      await axios.post("http://localhost:3002/login", User);
-      window.location.replace("http://localhost:3001/");
+      await axios.post("https://zerodha-clone-backend-g7h3.onrender.com/login", User);
+      window.location.replace("https://zerodhapractice.netlify.app/");
     } catch (err) {
       console.log("something went wrong!");
       alert("Signup failed");

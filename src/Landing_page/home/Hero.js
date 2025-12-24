@@ -1,13 +1,14 @@
-import React from "react";
-
+// import React from "react";
+import { useNavigate } from "react-router-dom";
 export default function Hero() {
+  const navigate = useNavigate();
   return (
     <div className="container-fluid mb-5 p-5 text-center">
       <div className="row justify-content-center">
         <div className="col-12 col-md-10 col-lg-8">
           <img
             src="\media\homeHero.png"
-            alt="Hero Image"
+            alt="Hero"
             className="img-fluid mb-4"
             style={{ maxWidth: "100%", height: "auto" }}
           />
@@ -21,11 +22,13 @@ export default function Hero() {
 
           <button
             type="button"
-            className="btn btn-primary btn-lg mt-4 w-75 w-md-50 w-lg-25 fs-5"    style={{
+            className="btn btn-primary btn-lg mt-4 w-75 w-md-50 w-lg-25 fs-5"
+            style={{
               width: "auto",
               minWidth: "160px",
               maxWidth: "200px",
             }}
+            onClick={() => navigate("/signup")}
           >
             Sign up for free
           </button>

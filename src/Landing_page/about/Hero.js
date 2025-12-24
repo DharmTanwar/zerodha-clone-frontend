@@ -1,8 +1,8 @@
-import React from "react";
+// import React from "react";
 
 export default function Hero() {
   return (
-    <div className=" container mt-5 ">
+    <div className="container mt-5">
       <div className="row justify-content-center">
         <div className="col-12">
           <h3 className="text-muted mt-5 text-center mb-5">
@@ -11,7 +11,9 @@ export default function Hero() {
           </h3>
         </div>
       </div>
+
       <hr />
+
       <div className="row p-5 justify-content-center text-muted">
         <div className="col-12 col-md-4 fw-medium fs-6">
           <p>
@@ -31,31 +33,49 @@ export default function Hero() {
             15% of all Indian retail trading volumes.
           </p>
         </div>
+
         <div className="col-12 col-md-4 fw-medium fs-6">
           <p>
             In addition, we run a number of popular open online educational and
             community initiatives to empower retail traders and investors.
           </p>
+
           <p>
-            <a href="#" style={{ textDecoration: "none" }}>
+            <a
+              href="/"
+              onClick={(e) => e.preventDefault()}
+              style={{ textDecoration: "none" }}
+            >
               Rainmatter
             </a>
             , our fintech fund and incubator, has invested in several fintech
             startups with the goal of growing the Indian capital markets.
           </p>
+
           <p>
             And yet, we are always up to something new every day. Catch up on
             the latest updates on our{" "}
-            <a href="" style={{ textDecoration: "none" }}>
+            <a
+              href="/"
+              onClick={(e) => e.preventDefault()}
+              style={{ textDecoration: "none" }}
+            >
               blog
             </a>{" "}
-            or see what the media is
-            <a href="" style={{ textDecoration: "none" }}>
-              {" "}
+            or see what the media is{" "}
+            <a
+              href="/"
+              onClick={(e) => e.preventDefault()}
+              style={{ textDecoration: "none" }}
+            >
               saying about us
             </a>{" "}
             or learn more about our business and product{" "}
-            <a href="" style={{ textDecoration: "none" }}>
+            <a
+              href="/"
+              onClick={(e) => e.preventDefault()}
+              style={{ textDecoration: "none" }}
+            >
               philosophies
             </a>
             .

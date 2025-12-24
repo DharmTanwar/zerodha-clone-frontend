@@ -1,6 +1,6 @@
 import React from "react";
 
- export default function Hero() {
+export default function Hero() {
   return (
     <section
       className="container-fluid p-3 mb-2 bg-primary-subtle text-primary-emphasis"
@@ -8,7 +8,9 @@ import React from "react";
     >
       <div className="p-5 d-flex justify-content-between" id="supportWrapper">
         <h4>Support Portal</h4>
-        <a href="">Track Tickets</a>
+        <a href="/" onClick={(e) => e.preventDefault()}>
+          Track Tickets
+        </a>
       </div>
 
       <div className="row p-5 m-3">
@@ -34,10 +36,18 @@ import React from "react";
           </div>
 
           <div className="d-flex flex-column gap-2 mt-3">
-            <a href="">Track account opening</a>
-            <a href="">Track segment activation</a>
-            <a href="">Intraday margins</a>
-            <a href="">Kite user manual</a>
+            <a href="/" onClick={(e) => e.preventDefault()}>
+              Track account opening
+            </a>
+            <a href="/" onClick={(e) => e.preventDefault()}>
+              Track segment activation
+            </a>
+            <a href="/" onClick={(e) => e.preventDefault()}>
+              Intraday margins
+            </a>
+            <a href="/" onClick={(e) => e.preventDefault()}>
+              Kite user manual
+            </a>
           </div>
         </div>
 
@@ -45,10 +55,14 @@ import React from "react";
           <h1 className="fs-3">Featured</h1>
           <ol>
             <li>
-              <a href="">Current Takeovers and Delisting - January 2024</a>
+              <a href="/" onClick={(e) => e.preventDefault()}>
+                Current Takeovers and Delisting - January 2024
+              </a>
             </li>
             <li>
-              <a href="">Latest Intraday leverages - MIS & CO</a>
+              <a href="/" onClick={(e) => e.preventDefault()}>
+                Latest Intraday leverages - MIS & CO
+              </a>
             </li>
           </ol>
         </div>
@@ -56,5 +70,3 @@ import React from "react";
     </section>
   );
 }
-
-

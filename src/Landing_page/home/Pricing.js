@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 export default function Pricing() {
   return (
@@ -10,14 +10,17 @@ export default function Pricing() {
             We pioneered the concept of discount broking and price transparency
             in India. Flat fees and no hidden charges.
           </p>
-          <a href="" style={{ textDecoration: "none" }}>
+          <a
+            href="/"
+            onClick={(e) => e.preventDefault()}
+            style={{ textDecoration: "none" }}
+          >
             See pricing <i className="fa-solid fa-arrow-right"></i>
           </a>
         </div>
 
         <div className="d-none d-md-block col-md-2"></div>
 
-        
         <div className="col-12 col-md-6">
           <div className="row text-center text-md-end">
             <div className="col-12 col-sm-4 mb-4 mb-sm-0">
@@ -34,7 +37,9 @@ export default function Pricing() {
                 alt="Equity delivery"
                 className="img-fluid mb-2"
               />
-              <p className="text-muted">Free equity delivery & direct mutual funds</p>
+              <p className="text-muted">
+                Free equity delivery & direct mutual funds
+              </p>
             </div>
             <div className="col-12 col-sm-4">
               <img

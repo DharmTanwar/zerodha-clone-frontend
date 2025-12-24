@@ -1,13 +1,13 @@
-import React from "react";
+// import React from "react";
 
 export default function RightSection({
   imageURL,
   productName,
   productDescription,
-  tryDemo,
+  // tryDemo,
   learnMore,
-  googlePlay,
-  appStore,
+  // googlePlay,
+  // appStore,
 }) {
   return (
     <div className="container mt-5 text-center  ">
@@ -18,7 +18,12 @@ export default function RightSection({
           <br />
           <p>
             &nbsp; &nbsp; &nbsp;{" "}
-            <a className="text-decoration-none" href="">
+            <a
+              href="/"
+              onClick={(e) => e.preventDefault()}
+              className="text-decoration-none"
+              
+            >
               {learnMore}
             </a>
           </p>
@@ -26,7 +31,7 @@ export default function RightSection({
         </div>
         <div className="col-md-2"></div>
         <div className="col-12 col-md-5">
-          <img className="img-fluid" src={imageURL} />
+          <img className="img-fluid" alt="url" src={imageURL} />
         </div>
       </div>
     </div>

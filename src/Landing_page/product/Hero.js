@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 export default function Hero() {
   return (
@@ -9,7 +9,11 @@ export default function Hero() {
           <h3>Sleek, modern, and intuitive trading platforms</h3>
           <p className="mt-3 fs-5">
             Check out our{" "}
-            <a href="" style={{ textDecoration: "none" }}>
+            <a
+              href="/"
+              onClick={(e) => e.preventDefault()}
+              style={{ textDecoration: "none" }}
+            >
               {" "}
               investment offerings →
             </a>
